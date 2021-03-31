@@ -1,3 +1,5 @@
+// This module is browser compatible.
+
 import { DURATIONS, DurationTime } from "./mod.ts";
 
 const EN_RELATIVE_TIME_FORMAT = new Intl.RelativeTimeFormat("en", {
