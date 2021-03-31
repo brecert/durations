@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.91.0/testing/asserts.ts";
-import { duration, DurationTime, fromDuration } from "./mod.ts";
+import { duration, DurationTime, format, fromDuration } from "./mod.ts";
 
 Deno.test("testDuration", () => {
   const dur = duration({ days: 1, hours: 1, minutes: 1, seconds: 1, ms: 1 });
@@ -61,4 +61,7 @@ Deno.test("basicUsage", () => {
 
   const res = fromDuration(dur);
   assertEquals(res, { days: 4, hours: 8, minutes: 30, seconds: 10, ms: 0 });
+
+  const str = format(res);
+  assertEquals(str, "in 4 days");
 });

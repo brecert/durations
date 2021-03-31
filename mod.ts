@@ -10,7 +10,10 @@ export const DURATION = {
   ms: 1,
 };
 
-const DURATIONS = Object.entries(DURATION) as [keyof typeof DURATION, number][];
+export const DURATIONS = Object.entries(DURATION) as [
+  keyof typeof DURATION,
+  number,
+][];
 
 /** convert a `DurationTime` value to to a `number` of milliseconds */
 export const duration = (time: Partial<DurationTime>): number =>
@@ -34,3 +37,5 @@ export const fromDuration = (time: number): DurationTime => {
 
   return output;
 };
+
+export * from "./format.ts";
