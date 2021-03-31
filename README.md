@@ -13,7 +13,7 @@ import {
   duration,
   format,
   fromDuration,
-} from "https://github.com/brecert/minecraft-ideas/mod.ts";
+} from "https://deno.land/x/durations@1.1.1/mod.ts";
 
 const dur = duration({ days: 3, hours: 32.5, seconds: 10 });
 assertEquals(dur, 376210000);
