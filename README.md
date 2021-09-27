@@ -8,12 +8,12 @@ creating and reading duration numbers easier.
 Basic usage:
 
 ```ts
-import { assertEquals } from "https://deno.land/std@0.91.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@0.108.0/testing/asserts.ts";
 import {
   duration,
   format,
   fromDuration,
-} from "https://deno.land/x/durations@1.1.2/mod.ts";
+} from "https://deno.land/x/durations@1.1.3/mod.ts";
 
 const dur = duration({ days: 3, hours: 32.5, seconds: 10 });
 assertEquals(dur, 376210000);
